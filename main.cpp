@@ -10,7 +10,7 @@ const int SM_BUILDER_LENGTH = 8;
 
 int main() {
     srand(time(0));
-    for (size_t i = 0; i < 10; i++) {
+    for (size_t i = 0; i < 100; i++) {
         int sm = rand() % 4 + 1;
         for (size_t i = 1; i < SM_BUILDER_LENGTH; i++) {
             sm *= 10;
@@ -18,5 +18,6 @@ int main() {
         }
         cout << sm << ariel::snowman(sm) << endl << endl;
     }
+    cout << "my favorite snowman:" << endl << ariel::snowman(11243113);
     return 0;
 }
